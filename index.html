@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dành Tặng Bé Khờ 💝</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./style/script.js"></script>
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="gift-card welcome-screen" id="welcomeScreen">
+            <h1>Hello Bé Khờ Nha >.+ </h1>
+            
+            <div class="emoji-big">🎁</div>
+            
+            <div class="message">
+                Em có một <span class="highlight">món quà đặc biệt</span> dành riêng cho Chị ! 💝<br>
+                Hãy cho Em biết <span class="highlight">Khờ mún dc gọi như nào </span> để e có thể giành riêng món quà này cho chị nhé >.!
+            </div>
+            
+            <div class="name-input-container">
+                <input type="text" class="name-input" id="nameInput" placeholder="Nhập tên của Bae ..." maxlength="20">
+            </div>
+            
+            <div class="button-container">
+                <button class="cute-button" onclick="showGift()">🎪 Xem Món Quà Của Em </button>
+            </div>
+        </div>
+
+        <!-- Gift Screen -->
+        <div class="gift-card gift-screen" id="giftScreen">
+            <h1>Tặng Bạn <span id="userName" class="highlight text-danger"></span></h1>
+            <div class="emoji-big">🎁</div>
+            
+            <div class="photo-frame">
+                <img src="h0c8feeb2-63ab-475d-a4db-b114ca29f433.jpg" alt="" width="10px" style="border-radius: 50%;">
+            </div>
+            
+            <div class="message" id="giftMessage">
+                Gửi đến <span class="highlight" id="userNameInMessage"></span> - Bé của tui! 💕<br>
+                Cảm ơn Bé vì đã luôn ở bên em , chia sẻ những khoảnh khắc <span class="highlight">vui buồn</span> cùng em.<br>
+                Những điều mà Bé làm cho em vô cùng  <span class="highlight">quý giá</span> và ý nghĩa! ✨
+            </div>
+            <div class="surprise-text" id="surpriseText">
+                🎉 Bất ngờ cho <span id="userNameInSurprise" class="highlight"></span>!<br> 
+                Vội đến, vội đi, vội nhạt nhòa <br>
+                Vội vàng sum họp, vội chia xa. <br>
+                Vội ăn, vội nói rồi vội thở <br>
+                Vội hưởng thụ mau để vội già.<br><br>
+
+                Vội sinh, vội tử, vội một đời<br>
+                Vội cười, vội khóc, vội buông lơi.<br>
+                Vội thương, vội ghét, nhìn nhau lạ!<br>
+                Vội vã tìm nhau, vội rã rời…<br><br>
+
+                Vội bao nhiêu kiếp rồi vẫn vội<br>
+                Đuổi theo hạnh phúc cuối trời xa.<br>
+                Ngoài hiên, đâu thấy hoa hồng nở<br>
+                Vội ngày, vội tháng, vội năm qua.<br><br>
+
+                Cứ thế nghìn thu đời vẫn vội<br>
+                Mặt mũi ngày xưa không nhớ ra.<br>
+                “Đáy nước tìm trăng” mà vẫn lội<br>
+                Vội tỉnh, vội mê, vội gật gà...<br><br>
+
+                Vội quên, vội nhớ, vội đi, về<br>
+                Bên ni, bên nớ mãi xa ghê!<br>
+                Có ai Giác lộ bàn chân vội<br>
+                “Hỏa trạch” bước ra, dứt não nề.<br>
+            </div>
+            <div class="button-container">
+                
+                <button class="cute-button" onclick="changeMessage()">📝 Đọc Tiếp Nè</button>
+                <button class="cute-button" onclick="showSurprise()">🌟 Tặng Khờ bài thơ nè 😊</button>
+            </div>
+            <button class="cute-button" onclick="goBack()">🔙 Quay lại</button>
+            
+        </div>
+    </div>
+</body>
+</html>
